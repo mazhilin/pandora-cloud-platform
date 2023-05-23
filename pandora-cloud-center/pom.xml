@@ -25,14 +25,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <modules>
+        <module>pandora-cloud-admin-center</module>
+        <module>pandora-cloud-applice-center</module>
+        <module>pandora-cloud-base-center</module>
+        <module>pandora-cloud-business-center</module>
+        <module>pandora-cloud-identity-center</module>
+        <module>pandora-cloud-material-center</module>
+        <module>pandora-cloud-support-center</module>
+    </modules>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

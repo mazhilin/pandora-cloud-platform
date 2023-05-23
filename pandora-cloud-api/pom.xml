@@ -26,13 +26,14 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+   <modules>
+       <module>pandora-cloud-admin-api</module>
+       <module>pandora-cloud-applice-api</module>
+       <module>pandora-cloud-base-api</module>
+       <module>pandora-cloud-business-api</module>
+       <module>pandora-cloud-identity-api</module>
+       <module>pandora-cloud-material-api</module>
+       <module>pandora-cloud-support-api</module>
+   </modules>
 
 </project>
