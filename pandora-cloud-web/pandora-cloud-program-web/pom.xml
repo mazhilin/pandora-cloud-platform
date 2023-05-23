@@ -4,15 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pandora.cloud</groupId>
-        <artifactId>pandora-cloud-platform</artifactId>
+        <artifactId>pandora-cloud-web</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pandora.cloud</groupId>
-    <artifactId>pandora-cloud-web</artifactId>
+    <artifactId>pandora-cloud-program-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pandora-cloud-web</name>
+    <name>pandora-cloud-program-web</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -26,14 +28,13 @@
         </dependency>
     </dependencies>
 
-    <modules>
-        <module>pandora-cloud-admin-web</module>
-        <module>pandora-cloud-console-web</module>
-        <module>pandora-cloud-dispatch-web</module>
-        <module>pandora-cloud-mobile-web</module>
-        <module>pandora-cloud-monitor-web</module>
-        <module>pandora-cloud-passport-web</module>
-        <module>pandora-cloud-program-web</module>
-    </modules>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
